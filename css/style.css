@@ -40,7 +40,7 @@ a:active {
 .outer-menu {
     position: fixed;
     top: 0px;
-    right: 60px;
+    right: 90px;
     z-index: 1;
 }
 
@@ -264,13 +264,13 @@ html {
     text-align: center;
 }
 
-.leerlijn nav {}
+
 
 .leerlijn nav ul {
 
     list-style-type: none;
     display: flex;
-    justify-content: ;
+
 }
 
 .leerlijn nav ul li a {
