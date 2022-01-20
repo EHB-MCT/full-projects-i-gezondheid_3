@@ -380,7 +380,47 @@ section div {
 /*wie zijn wij*/
 
 
-/*leerlijn.html*/
+.wiezijnwij {
+
+    padding-bottom: 40px;
+    background-color: #DEF2F1;
+}
+
+.werkgroepipo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #DEF2F1;
+    width: 90%;
+}
+
+
+.wiezijnwij h3 {
+
+    text-decoration: underline 2px;
+    text-align: center;
+    margin-top: 0px;
+    color: #3AAFA9;
+    margin-bottom: 40px;
+}
+
+.wiezijnwij h1 {
+    text-align: center;
+    margin-top: 0px;
+    color: #3AAFA9;
+}
+
+.wiezijnwij p {
+    color: #17252a;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.wiezijnwij img {
+    margin: 40px 0px;
+}
+
+/*leerlijn IPO*/
 
 .leerlijn {
     margin-left: 0px;
@@ -474,6 +514,12 @@ footer .footer-logo img {
     height: 70px;
 }
 
+.image_ipo img,
+.imagewiezijnwij img {
+
+    border: 5px dotted #17252A;
+}
+
 @media (min-width: 761px) {
     footer div {
         width: 33%;
@@ -503,13 +549,15 @@ footer .footer-logo img {
         margin-right: 75px;
         padding: 10px 20px;
         border-radius: 20px;
+        transition: 0.3s;
 
     }
 
     .nav-desktop ul li a:hover {
         color: #3AAFA9;
         text-decoration: underline;
-        background-color: #17252A;
+        /*background-color: #17252A;*/
+        transition: 0.3s;
     }
 
     .logo {
@@ -537,11 +585,6 @@ footer .footer-logo img {
         text-align: left;
         font-size: 20px;
         transition: 0.5s;
-    }
-
-    .image_ipo img {
-        margin: 0;
-        border: 5px dotted #17252A;
     }
 
     .watisipo {
@@ -573,4 +616,34 @@ footer .footer-logo img {
         text-align: left;
         margin-top: 50px;
     }
+
+
+    /*wie zijn wij*/
+
+    .werkgroepipo div {
+        margin: auto;
+        width: 40%;
+    }
+
+    .wiezijnwij h1,
+    .wiezijnwij h3,
+    .wiezijnwij p {
+        text-align: left;
+    }
+
+    .imagewiezijnwij img {
+
+        width: 100%;
+    }
+
+
+    /*leerlijn IPO*/
+
+
+
+
+
+
+
+
 }
