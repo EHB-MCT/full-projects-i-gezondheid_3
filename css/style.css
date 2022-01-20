@@ -275,6 +275,7 @@ a:active {
     background-color: wheat;
     overflow: hidden;
     position: relative;
+
 }
 
 .header::after {
@@ -285,6 +286,7 @@ a:active {
     position: absolute;
     transform: sKewY(-4deg);
     bottom: -100px;
+    border-top: 5px solid #216260;
 }
 
 /*wat is ipo*/
@@ -307,7 +309,6 @@ a:active {
 
 .watisipo>div>h1,
 .doelstellingen>h1 {
-
     text-align: center;
     margin-top: 0px;
     color: #3AAFA9;
@@ -319,6 +320,7 @@ a:active {
     color: #17252A;
     font-size: 16px;
     text-align: justify;
+    transition: 0.5s;
 }
 
 .image_ipo {
@@ -336,7 +338,6 @@ a:active {
 /*doelstellingen*/
 
 .doelstellingen div {
-
     border-radius: 10px;
     padding: 20px 15px;
     margin: 20px 0px;
@@ -363,10 +364,7 @@ a:active {
     width: 100px;
 }
 
-
-
 section {
-
     justify-content: space-around;
     flex-wrap: wrap;
     display: flex;
@@ -374,12 +372,13 @@ section {
     width: 90%;
 }
 
-
-
 section div {
-
+    border: 3px solid #17252A;
     width: 40%;
 }
+
+/*wie zijn wij*/
+
 
 /*leerlijn.html*/
 
@@ -402,9 +401,6 @@ section div {
 
 .leerlijn nav ul li a {
     text-align: center;
-
-
-
 }
 
 .leerlijn nav ul li {
@@ -462,6 +458,22 @@ footer .footer-logo img {
     padding-left: 20px;
 }
 
+.footer-socialmedia i:hover {
+    color: #17252A;
+}
+
+.logo-un {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #216260;
+    padding-bottom: 50px;
+}
+
+.logo-un img {
+    height: 70px;
+}
+
 @media (min-width: 761px) {
     footer div {
         width: 33%;
@@ -513,11 +525,8 @@ footer .footer-logo img {
     /*homepage*/
 
     .watisipo div {
-
         width: 40%;
-        background-color: red;
-
-
+        margin: auto;
     }
 
     .watisipo div h1 {
@@ -526,17 +535,42 @@ footer .footer-logo img {
 
     .watisipo div p {
         text-align: left;
+        font-size: 20px;
+        transition: 0.5s;
     }
 
     .image_ipo img {
-        width: 100%;
         margin: 0;
-
+        border: 5px dotted #17252A;
     }
 
     .watisipo {
-
-        background-color: blue;
+        margin: auto;
+        width: 100%;
+        justify-content: space-around !important;
     }
 
+    .doelstellingen {
+        width: 90%;
+        margin: auto;
+    }
+
+    section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    section div {
+        width: 15%;
+    }
+
+    .doelstellingen p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .doelstellingen>h1 {
+        text-align: left;
+        margin-top: 50px;
+    }
 }
