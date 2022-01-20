@@ -423,8 +423,14 @@ section div {
 /*leerlijn IPO*/
 
 .leerlijn {
-    margin-left: 0px;
+    text-align: center;
+    padding-bottom: 40px;
     background-color: #DEF2F1;
+}
+
+.leerlijn nav {
+    margin: auto;
+    width: 100%;
 }
 
 .leerlijn h1 {
@@ -434,31 +440,84 @@ section div {
 }
 
 .leerlijn nav ul {
-    list-style-type: none;
+    margin: 30px 40px;
     display: flex;
+    padding: 0;
+    justify-content: space-around;
+    list-style-type: none;
+
 }
 
 .leerlijn nav ul li a {
-    text-align: center;
+    color: #DEF2F1;
+
+
 }
 
 .leerlijn nav ul li {
-    padding: 20px;
+    border: 2px solid #17252A;
+    padding: 10px 20px;
     border-radius: 5px;
-    background-color: #DEF2F1;
-    margin-left: 20px;
+    /* background-color: #DEF2F1;*/
+    background-color: #3AAFA9;
+    transition: 0.3s;
     display: inline-block;
 
 }
 
-.fase {
-    height: 500px;
-    background-color: #c1F6ED;
+
+.leerlijn nav ul li:hover {
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #2B7A78;
+}
+
+.arrowUp i {
+    color: #216260;
+    margin-top: 40px;
+    font-size: 75px;
+    transition: 0.3s;
+}
+
+.arrowUp i:hover {
+    transition: 0.3s;
     color: #17252A;
+}
+
+.fase {
+    border: 3px dashed #17252a;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 40px 0px;
+    background-color: #3AAFA9;
+    margin-top: 40px;
     border-radius: 20px;
+
+}
+
+span {
+    font-weight: bold;
+    color: #DEF2F1;
+}
+
+.fase p,
+.fase ul li {
+    color: #DEF2F1;
+    margin: 0px 40px;
+    text-align: justify;
+}
+
+.fase h3 {
+    color: #17252A;
+}
+
+.fase ul li {
+    margin: 0px 100px;
 }
 
 .fase img {
+    margin-top: 20px;
     height: 200px;
 }
 
@@ -476,7 +535,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 
 footer div {
@@ -488,6 +547,8 @@ footer .footer-logo img {
     height: 75px;
 }
 
+
+
 .contact h3,
 .footer-socialmedia h3 {
     color: white;
@@ -498,6 +559,10 @@ footer .footer-logo img {
 .contact p {
     color: #DEF2F1;
     font-size: 20px;
+}
+
+.footer-socialmedia {
+    margin-top: 0px;
 }
 
 .footer-socialmedia i {
@@ -518,9 +583,10 @@ footer .footer-logo img {
 }
 
 .logo-un img {
+    margin-top: 10px;
     height: 50px;
     transition: 0.5s;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 761px) {
@@ -530,10 +596,7 @@ footer .footer-logo img {
         background-color: #216260;
     }
 
-    .logo-un img {
-        height: 75px;
-        transition: 0.5s;
-    }
+
 
     footer div {
         width: 33%;
@@ -652,4 +715,28 @@ footer .footer-logo img {
     }
 
     /*leerlijn IPO*/
+
+    .fase {
+        height: 690px;
+        width: 30%;
+
+    }
+
+    .leerlijn nav ul {
+        display: none;
+    }
+
+    .containerfases {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .containerfases h3 {
+        margin: 30px 20px;
+    }
+
+
 }
