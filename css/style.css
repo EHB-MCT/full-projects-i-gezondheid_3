@@ -290,24 +290,95 @@ a:active {
 /*wat is ipo*/
 
 .home {
+    padding-bottom: 40px;
     background-color: #DEF2F1;
 }
 
 .watisipo {
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
 }
 
-.watisipo>div>h1 {
+.watisipo div {
+    width: 100%;
+}
+
+.watisipo>div>h1,
+.doelstellingen>h1 {
+
+    text-align: center;
     margin-top: 0px;
     color: #3AAFA9;
 }
 
 .watisipo>div>p {
+    line-height: 1.5;
     margin-top: 0px;
     color: #17252A;
     font-size: 16px;
     text-align: justify;
+}
+
+.image_ipo {
+    width: 90%;
+    margin: auto;
+}
+
+.image_ipo img {
+    margin: 50px 0px;
+    width: 100%;
+}
+
+
+
+/*doelstellingen*/
+
+.doelstellingen div {
+
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 20px 0px;
+    text-align: center;
+    background-color: #3AAFA9;
+    transition: 0.3s;
+
+}
+
+.doelstellingen div:hover {
+
+    background-color: #2B7A78;
+}
+
+.doelstellingen p {
+    font-size: 15px;
+    color: #DEF2F1;
+    text-align: center;
+}
+
+.doelstellingen div img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100px;
+}
+
+
+
+section {
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+
+
+section div {
+
+    width: 40%;
 }
 
 /*leerlijn.html*/
@@ -438,4 +509,34 @@ footer .footer-logo img {
         transform: rotate(360deg);
         transition: 1s;
     }
+
+    /*homepage*/
+
+    .watisipo div {
+
+        width: 40%;
+        background-color: red;
+
+
+    }
+
+    .watisipo div h1 {
+        text-align: left;
+    }
+
+    .watisipo div p {
+        text-align: left;
+    }
+
+    .image_ipo img {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .watisipo {
+
+        background-color: blue;
+    }
+
 }
