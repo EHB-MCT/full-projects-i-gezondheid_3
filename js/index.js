@@ -39,7 +39,7 @@ function update() {
             drawStar(star.x, star.y, star.size, color);
         }
     }
-    /*deze loop is om de sterren (array) van het scherm te verwijderen*/
+
     for (let i = 0; i < stars.length; i++) {
         let star = stars[i];
         if (star.y > height * 5 / 7 + star.size) {
