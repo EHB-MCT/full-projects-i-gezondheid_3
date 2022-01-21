@@ -40,7 +40,7 @@ export function rgba(r, g, b, a) {
     return "rgb(" + r + "," + g + "," + b + "," + a + "%)";
 }
 
-/** function that converts an angle in degrees to radians
+/** function that converts an angle in degrees to radians.
  * @param {number} degrees 
  */
 export function degrees(degrees) {

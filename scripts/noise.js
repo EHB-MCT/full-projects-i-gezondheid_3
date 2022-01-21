@@ -123,6 +123,7 @@ export function setSeed(val) {
   // define the recurrence relationship
   // pick a random seed if val is undefined or null
   // the >>> 0 casts the seed to an unsigned 32-bit integer
+
   seed = (val == null ? Math.random() * m : val) >>> 0;
   perlin = null;
 }
