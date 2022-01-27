@@ -381,6 +381,14 @@ a:active {
 }
 
 /**-------------***/
+
+/* Start code: leerlij-container*/
+.leerlijn-container {
+    height: 500px;
+}
+
+/* Einde code: leerlij-container*/
+
 /* Start code: Footer-container*/
 footer {
     padding: 50px 0;
