@@ -339,6 +339,9 @@ a:active {
     margin-bottom: 20px;
     width: 100%;
     padding: 20px 30px;
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .doelstellingen>section>article>img {
@@ -384,7 +387,48 @@ a:active {
 
 /* Start code: leerlij-container*/
 .leerlijn-container {
-    height: 500px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.leerlijn-container h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.fase-container {
+    margin: auto;
+    width: 100%;
+    background-color: #F7F3E9;
+}
+
+.fase {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fase h2 {
+    font-size: 1em;
+    width: 100%;
+}
+
+.fase ul {
+    background-repeat: no-repeat;
+    text-align: left;
+    list-style-image: url("../images/leerlijn-logo-1.png");
+}
+
+.fase2 {
+    background-color: white;
+}
+
+.fase img {
+    width: 80%;
+    border: 2px solid #F05945;
 }
 
 /* Einde code: leerlij-container*/
@@ -434,14 +478,15 @@ footer h2 {
 
 /* Einde code: Footer-container*/
 
-
+span {
+    color: #F05945;
+}
 
 /*Start code media*/
 @media (min-width: 750px) {
 
     /*Star code: main menu*/
     .main-menu-container {
-        position: fixed;
         z-index: 999;
         background-color: white;
     }
@@ -554,12 +599,14 @@ footer h2 {
         width: 80%;
         justify-content: space-between;
         margin: auto;
+        margin-bottom: 70px;
     }
 
     .doelstellingen>section>article {
         width: 15%;
         height: 350px;
         position: relative;
+        box-shadow: none;
     }
 
     .triangle-up {
@@ -581,6 +628,77 @@ footer h2 {
 
     /*Einde code: Home*/
 
+    /*Start code: Leerlijn-container*/
+    .fase-container {
+        width: 100%;
+    }
+
+    .fase {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        background-color: #F7F3E9;
+        position: relative;
+    }
+
+    .fase2 .fa-chevron-down {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .fase i {
+        position: absolute;
+        color: #F05945;
+        font-size: 3em;
+        right: 80px;
+    }
+
+    .fase h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .fase2 {
+        background-color: white;
+    }
+
+    .fase2 article {
+        order: 3;
+    }
+
+    .fase2 section {
+        order: 1;
+    }
+
+    .fase2 div {
+        order: 2;
+    }
+
+    .fase section,
+    .fase article {
+        width: 40%;
+        margin: auto;
+    }
+
+    .line-fase {
+        width: 3px;
+        height: 450px;
+        background-color: #F05945;
+    }
+
+    .fase img {
+        transform: rotate(-5deg);
+        margin-bottom: 50px;
+    }
+
+    .fase2 img {
+        transform: rotate(5deg);
+
+    }
+
+    /*Einde code: Leerlijn-container*/
+
     footer {
         flex-direction: row;
         justify-content: space-around;
@@ -596,7 +714,6 @@ footer h2 {
     footer img {
         margin-top: 20px;
     }
-
     .icons-university {
         flex-direction: row;
         justify-content: space-around;
