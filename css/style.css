@@ -1,40 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;600&display=swap');
+@import url("https://use.typekit.net/sfa6trs.css");
 
 * {
-    color: #17252A;
+    font-family: omnes-pro, sans-serif;
+}
 
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* HAMBURGER MENU BEGIN */
-/*@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-stretch: normal;
-    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Pacifico';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
-}*/
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Start code: Menu voor mobiele versie */
 
 a,
 a:visited,
@@ -43,7 +25,6 @@ a:active {
     color: inherit;
     text-decoration: none;
 }
-
 
 .outer-menu {
     position: fixed;
@@ -100,16 +81,15 @@ a:active {
     transform: rotate(225deg);
 }
 
-
 .outer-menu .hamburger {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     z-index: 1;
     width: 60px;
     height: 60px;
     padding: 0.5em 1em;
-    background: #3AAFA9;
+    background-color: #F05945;
     border-radius: 0 0.12em 0.12em 0;
     cursor: pointer;
     transition: box-shadow 0.4s ease;
@@ -118,7 +98,7 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 30px 0px 0px 30px;
 }
 
 .outer-menu .hamburger>div {
@@ -126,7 +106,7 @@ a:active {
     flex: none;
     width: 100%;
     height: 2px;
-    background: #FEFEFE;
+    background: #fefefe;
     transition: all 0.4s ease;
     display: flex;
     align-items: center;
@@ -135,7 +115,7 @@ a:active {
 
 .outer-menu .hamburger>div:before,
 .outer-menu .hamburger>div:after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: -10px;
@@ -170,8 +150,8 @@ a:active {
 .outer-menu .menu>div {
     width: 200vw;
     height: 200vw;
-    color: #FEFEFE;
-    background: #2B7A78;
+    color: #f05945;
+    background-color: whitesmoke;
     border-radius: 50%;
     transition: all 0.4s ease;
     flex: none;
@@ -212,18 +192,24 @@ a:active {
     display: block;
 }
 
+.outer-menu .menu>div>div>ul>i {
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .outer-menu .menu>div>div>ul>li>a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     position: relative;
     display: inline;
     cursor: pointer;
     transition: color 0.4s ease;
-    color: #DEF2F1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 
-.outer-menu .menu>div>div>ul>li>a:hover {
-    color: #e5e5e5;
+.outer-menu .menu>div>div>ul>li>a:hover,
+.outer-menu .menu>div>div>ul>i:hover {
+    color: black;
 }
 
 .outer-menu .menu>div>div>ul>li>a:hover:after {
@@ -231,7 +217,7 @@ a:active {
 }
 
 .outer-menu .menu>div>div>ul>li>a:after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -0.15em;
@@ -242,632 +228,378 @@ a:active {
     transition: width 0.4s ease;
 }
 
-/* HAMBURGER MENU EIND*/
-/*NAV*/
+/* Einde code: Menu voor mobiele versie */
 
-.nav {
-    position: fixed;
-    width: 100%;
-    background-color: #216260;
-    height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-}
 
-.nav-desktop {
+/* Start code: Main-menu-container */
+.main-menu-desktop,
+.main-menu-icons {
     display: none;
 }
 
-.logo img {
-    width: 150px;
-}
-
-/* HEADER */
-.header {
-    background-image: url("../images/header.gif");
-    background-position: center;
-    background-size: cover;
+.main-menu-container {
     width: 100%;
-    height: 500px;
-    background-color: wheat;
-    overflow: hidden;
-    position: relative;
-
-}
-
-.header::after {
-    content: "";
-    width: 100%;
-    height: 200px;
-    background-color: #DEF2F1;
-    position: absolute;
-    transform: sKewY(-4deg);
-    bottom: -100px;
-    border-top: 5px solid #216260;
-}
-
-#canvas {
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/*wat is ipo*/
-
-.home {
-    padding-bottom: 40px;
-    background-color: #DEF2F1;
-}
-
-.watisipo {
+    height: 80px;
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
+    align-items: center;
 }
 
-.watisipo div {
-    width: 100%;
-}
-
-.watisipo>div>h1,
-.doelstellingen>h1 {
-    text-align: center;
-    margin-top: 0px;
-    color: #3AAFA9;
-}
-
-.watisipo>div>p {
-    line-height: 1.5;
-    margin-top: 0px;
-    color: #17252A;
-    font-size: 16px;
-    text-align: justify;
-    transition: 0.5s;
-}
-
-.image_ipo {
-    width: 90%;
-    margin: auto;
-}
-
-.image_ipo img {
-    margin: 50px 0px;
-    width: 100%;
-}
-
-
-
-/*doelstellingen*/
-
-.doelstellingen div {
-    border-radius: 10px;
-    padding: 20px 15px;
-    margin: 20px 0px;
-    text-align: center;
-    background-color: #3AAFA9;
-    transition: 0.3s;
-
-}
-
-.doelstellingen div:hover {
-
-    background-color: #2B7A78;
-}
-
-.doelstellingen p {
-    font-size: 15px;
-    color: #DEF2F1;
-    text-align: center;
-}
-
-.doelstellingen div img {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    width: 100px;
-}
-
-section {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    display: flex;
-    margin: auto;
-    width: 90%;
-}
-
-section div {
-    border: 3px solid #17252A;
-    width: 40%;
-}
-
-/*wie zijn wij*/
-
-
-.wiezijnwij {
-
-    padding-bottom: 40px;
-    background-color: #DEF2F1;
-}
-
-.werkgroepipo {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    background-color: #DEF2F1;
-    width: 90%;
-}
-
-
-.wiezijnwij h3 {
-
-    text-decoration: underline 2px;
-    text-align: center;
-    margin-top: 0px;
-    color: #3AAFA9;
-    margin-bottom: 40px;
-}
-
-.wiezijnwij h1 {
-    text-align: center;
-    margin-top: 0px;
-    color: #3AAFA9;
-}
-
-.wiezijnwij p {
-    color: #17252a;
-    text-align: justify;
-    font-size: 16px;
-}
-
-.wiezijnwij img {
-    margin: 40px 0px;
-}
-
-/*leerlijn IPO*/
-
-.leerlijn {
-    text-align: center;
-    padding-bottom: 40px;
-    background-color: #DEF2F1;
-}
-
-.leerlijn nav {
-    margin: auto;
-    width: 100%;
-}
-
-.leerlijn h1 {
-    margin: 0;
-    color: #3AAFA9;
-    text-align: center;
-}
-
-.leerlijn nav ul {
-    margin: 30px 40px;
-    display: flex;
-    padding: 0;
-    justify-content: space-around;
-    list-style-type: none;
-
-}
-
-.leerlijn nav ul li a {
-    color: #DEF2F1;
-
-
-}
-
-.leerlijn nav ul li {
-    border: 2px solid #17252A;
-    padding: 10px 20px;
-    border-radius: 5px;
-    /* background-color: #DEF2F1;*/
-    background-color: #3AAFA9;
-    transition: 0.3s;
-    display: inline-block;
-
-}
-
-
-.leerlijn nav ul li:hover {
-    border-radius: 10px;
-    transition: 0.3s;
-    background-color: #2B7A78;
-}
-
-.arrowUp i {
-    color: #216260;
-    margin-top: 40px;
-    font-size: 75px;
-    transition: 0.3s;
-}
-
-.arrowUp i:hover {
-    transition: 0.3s;
-    color: #17252A;
-}
-
-.fase {
-    border: 3px dashed #17252a;
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    padding: 40px 0px;
-    background-color: #3AAFA9;
-    margin-top: 40px;
-    border-radius: 20px;
-
-}
-
-span {
-    font-weight: bold;
-    color: #DEF2F1;
-}
-
-.fase p,
-.fase ul li {
-    color: #DEF2F1;
-    margin: 0px 40px;
-    text-align: justify;
-}
-
-.fase h3 {
-    color: #17252A;
-}
-
-.fase ul li {
-    margin: 0px 100px;
-}
-
-.fase img {
-    margin-top: 20px;
-    height: 200px;
-}
-
-/*contact*/
-
-.container-contact {
-    margin: auto;
-    background-color: #DEF2F1;
-}
-
-.container-contact main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container-contact h1 {
-    margin-top: 0;
-    text-align: center;
-    color: #3AAFA9;
-}
-
-.table {
-    width: 80%;
-    margin: auto;
-}
-
-.table p {
-    margin: 5px;
-    color: #2B7A78;
-    font-weight: bold;
-
-}
-
-input[type=text],
-input[type=number],
-input[type=email],
-textarea {
-    width: 100%;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    padding: 15px 0;
-}
-
-
-input[type=text]:hover,
-input[type=number]:hover,
-input[type=email]:hover,
-textarea:hover {
-    border: 2px solid #216260;
-}
-
-input[type=submit] {
-    background-color: #3AAFA9;
-    padding: 10px 30px;
-    border-radius: 10px;
-    color: #DEF2F1;
-    font-size: 17px;
-    font-weight: bold;
+.ipo-logo img {
+    height: 60px;
     cursor: pointer;
-    transition: 0.5s;
-    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+/* Einde code: Main-menu-container */
+
+/* Start code: banner-container */
+
+.banner-container {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    height: 500px;
     width: 100%;
+    border-bottom: 5px solid #F05945;
 }
 
-input[type=submit]:hover {
-    background-color: #DEF2F1;
-    color: #3AAFA9;
-    transition: 0.5s;
-    border-radius: 15px;
-}
+/* Einde code: banner-container */
 
-::placeholder {
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.img-contact {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-.img-contact img {
-    width: 70%;
-    margin: 50px 0;
-    border-radius: 15px;
-    border: 3px solid #216260;
-}
-
-/*---------------------*/
-.image_ipo img,
-.imagewiezijnwij img {
-    border: 5px dotted #17252A;
-}
-
-/*Footer*/
-
-footer {
-    width: 100%;
-    background-color: #216260;
+/* Start code: home-container */
+.wiezijnwij {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    padding: 10px 0px;
 }
 
-footer div {
-    width: 100%;
+.wiezijnwij article {
+    width: 90%;
     margin: auto;
+    text-align: center;
+    padding: 20px 10px;
 }
 
-footer .footer-logo img {
-    height: 75px;
-}
-
-
-
-.contact h3,
-.footer-socialmedia h3 {
-    color: white;
-    font-size: 30px;
+.wiezijnwij article h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-.contact p {
-    color: #DEF2F1;
-    font-size: 20px;
+.wiezijnwij article h2 {
+    color: #F05945;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
-.footer-socialmedia {
-    margin-top: 0px;
+.wiezijnwij section {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 3px solid #F05945;
+    height: 300px;
+    background-color: #A3D2CA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-socialmedia i {
-    color: #DEF2F1;
-    font-size: 30px;
-    padding-left: 20px;
+.wiezijnwij>section>img {
+    width: 15%;
 }
 
-.footer-socialmedia i:hover {
-    color: #17252A;
+.watisipo {
+    background-color: #F7F3E9;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5%;
 }
 
-.logo-un {
+.watisipo>.waarvoorStaatIpo {
+    text-align: center;
+}
+
+.watisipo>.waarvoorStaatIpo>h2 {
+    color: #F05945;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.doelstellingen>section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.doelstellingen>section>article {
+    background-color: white;
+    border: 1px solid #F05945;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.doelstellingen>section>article>img {
+    height: 110px;
+    transition: 1s;
+}
+
+.doelstellingen>section>article>img:hover {
+    transform: rotate(90deg);
+    height: 130px;
+    transition: 0.5s;
+}
+
+.triangle-up {
+    display: none;
+}
+
+/* Einde code: home-container */
+/*Line*/
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.line span {
+    height: 2px;
+    width: 100%;
+    background-color: #F05945;
+}
+
+.line div {
+    color: #F05945;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/**-------------***/
+/* Start code: Footer-container*/
+footer {
+    padding: 50px 0;
+    background-color: #1D1E1B;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: white;
     text-align: center;
-    background-color: #216260;
+    position: relative;
 }
 
-.logo-un img {
-    margin-top: 10px;
-    height: 50px;
-    transition: 0.5s;
-    margin-bottom: 40px;
+.footer-ipo-logo img {
+    height: 100px;
 }
 
-@media (min-width: 761px) {
-    .logo-un {
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #216260;
+footer h2 {
+    color: #F05945;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer-icons i {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.footer-icons i:hover {
+    color: #F05945;
+}
+
+.icons-university {
+    background-color: #1D1E1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-university img {
+    margin-bottom: 50px;
+    width: 150px;
+}
+
+/* Einde code: Footer-container*/
+
+
+
+/*Start code media*/
+@media (min-width: 750px) {
+
+    /*Star code: main menu*/
+    .main-menu-container {
+        position: fixed;
+        z-index: 999;
+        background-color: white;
     }
 
-
-
-    footer div {
-        width: 33%;
+    .main-menu-container {
+        align-items: center;
+        justify-content: space-between;
     }
 
     .outer-menu {
         display: none;
     }
 
-    .nav {
-        display: flex;
+    .main-menu-desktop {
+        display: block;
     }
 
-    .nav-desktop {
+    .main-menu-desktop ul li {
         display: inline-block;
     }
 
-    .nav-desktop ul li {
-        list-style-type: none;
-        display: inline-block;
-    }
-
-    .nav-desktop ul li a {
-        color: white;
+    .main-menu-desktop ul li a {
+        font-size: 1em;
+        color: #F05945;
+        margin-left: 50px;
         font-weight: bold;
-        font-size: 18px;
-        margin-right: 75px;
-        padding: 10px 20px;
-        border-radius: 20px;
-        transition: 0.3s;
-
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
-    .nav-desktop ul li a:hover {
-        color: #3AAFA9;
+    .main-menu-desktop ul li a:hover {
+        color: #1D1E1B;
         text-decoration: underline;
-        transition: 0.3s;
     }
 
-    .logo {
-        margin-left: 75px;
-        transition: 2s;
+
+    .main-menu-icons {
+        display: block;
+        font-size: 1.5em;
+        color: #F05945;
+        margin-right: 10%;
     }
 
-    .logo:hover {
+    .main-menu-icons i {
+        margin-right: 30px;
+    }
+
+    .main-menu-icons i:hover {
+        color: #1D1E1B;
+    }
+
+    .ipo-logo img {
+        transition: 1s;
+        margin-left: 230px;
+    }
+
+    .ipo-logo img:hover {
         transform: rotate(360deg);
         transition: 1s;
     }
 
-    /*homepage*/
+    /*Einde code: main menu*/
 
-    .watisipo div {
-        width: 40%;
-        margin: auto;
+    /*Start code: banner*/
+
+    .banner-container {
+        background-image: url('../images/banner-1.jpg');
     }
 
-    .watisipo div h1 {
-        text-align: left;
-    }
+    /*Einde code: banner*/
 
-    .watisipo div p {
-        text-align: left;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-
-    .watisipo {
-        margin: auto;
+    /*Start code: Home*/
+    .home-container {
         width: 100%;
-        justify-content: space-around !important;
-    }
-
-    .doelstellingen {
-        width: 90%;
         margin: auto;
     }
 
-    section {
-        width: 100%;
+    .wiezijnwij {
+        width: 80%;
+        margin: auto;
         justify-content: space-between;
     }
 
-    section div {
-        width: 15%;
-    }
-
-    .doelstellingen p {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .doelstellingen>h1 {
+    .wiezijnwij article,
+    .wiezijnwij section {
+        width: 45%;
+        height: 500px;
         text-align: left;
         margin-top: 50px;
     }
 
-    /*wie zijn wij*/
-
-    .werkgroepipo div {
-        margin: auto;
-        width: 40%;
+    .watisipo {
+        background-color: #F7F3E9;
+        width: 100%;
+        padding: 20px 0;
     }
 
-    .wiezijnwij h1,
-    .wiezijnwij h3,
-    .wiezijnwij p {
+    .waarvoorStaatIpo {
+        width: 80%;
+        margin: auto;
+    }
+
+    .waarvoorStaatIpo p {
+        width: 80%;
+        margin: auto;
         text-align: left;
     }
 
-    .werkgroepipo {
-        justify-content: space-around;
+    .doelstellingen>section {
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
     }
 
-    .imagewiezijnwij img {
-        width: 100%;
+    .doelstellingen>section>article {
+        width: 15%;
+        height: 350px;
+        position: relative;
     }
 
-    /*leerlijn IPO*/
-
-    .fase {
-        height: 690px;
-        width: 30%;
-
+    .triangle-up {
+        display: block;
     }
 
-    .leerlijn nav ul {
-        display: none;
+    .triangle-up img {
+        position: absolute;
+        bottom: -3px;
+        left: -10px;
+        width: 110%;
+        height: 80px;
     }
 
-    .containerfases {
+    .line {
+        width: 80%;
+        margin: 50px auto;
+    }
 
-        display: flex;
+    /*Einde code: Home*/
+
+    footer {
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
+        justify-content: space-around;
+        text-align: left;
+        padding: 0;
     }
 
-    .containerfases h3 {
-        margin: 30px 20px;
+    footer div {
+        height: 200px;
+        margin: 0;
     }
 
-    /*contact*/
-
-    .container-contact {
-        padding-bottom: 30px;
+    footer img {
+        margin-top: 20px;
     }
 
-    .img-contact,
-    .table {
-        width: 50%;
+    .icons-university {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
     }
 
-    .img-contact img {
-        width: 50%;
+    /*Einde code: footer*/
+    .fixedNav {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: 2px solid #F05945;
     }
 
-    input[type=text],
-    input[type=number],
-    input[type=email],
-    textarea {
-        width: 60%;
-        margin-top: 6px;
-        margin-bottom: 10px;
-        padding: 10px 0;
-        transition: 0.5s;
-    }
-
-    input[type=text]:hover,
-    input[type=number]:hover,
-    input[type=email]:hover,
-    textarea:hover {
-        width: 65%;
-        transition: 0.5s;
-    }
-
-    input[type=submit] {
-        width: 20%;
-    }
 }

@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eca43c78f4.js" crossorigin="anonymous"></script>
-    <title>Full Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+
+    <title>Homepage | IPO</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="nav">
 
+    <div class="main-menu-container" id="main-menu">
+        <!--Start code: Menu voor mobiele versie -->
         <div class="outer-menu">
             <input class="checkbox-toggle" type="checkbox" />
             <div class="hamburger">
@@ -22,128 +26,90 @@
                 <div>
                     <div>
                         <ul>
+                            <a href="index.html"><img src="images/ipo-logo.png" alt="logo" width="100px"></a>
                             <li><a href="index.html">Wat is IPO?</a></li>
                             <li><a href="wiezijnwij.html">Wie zijn Wij?</a></li>
                             <li><a href="leerlijn.html">Leerlijn IPO</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="socialmedia.html">Social Media</a></li>
+                            <br>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+
                         </ul>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo_small.png" alt=""></a>
+        <!--Einde code: Menu voor mobiele versie -->
+        <div class="ipo-logo">
+            <a href="index.html"><img src="images/ipo-logo.png" alt="logo"></a>
         </div>
-        <nav class="nav-desktop">
+
+        <!--Start code: Menu voor desktop versie -->
+        <div class="main-menu-desktop">
             <ul>
-                <li><a href="index.html">Wat is IPO?</a>
+                <li><a href="index.html"
+                        style="color: #1D1E1B; text-decoration: underline; padding:10px 20px; border-radius: 10px;">Wie
+                        zijn
+                        wij?</a>
                 </li>
-                <li><a href="wiezijnwij.html">Wie zijn Wij?</a>
-                </li>
-                <li><a href="leerlijn.html"
-                        style="color:#3AAFA9; background-color: #17252A; text-decoration: underline;">Leerlijn IPO</a>
-                </li>
+                <!-- <li><a href="#wie">Wie zijn Wij?</a></li> -->
+                <li><a href="leerlijn.html">Leerlijn IPO</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="socialmedia.html">Social Media</a></li>
             </ul>
-        </nav>
-    </div>
-    <div class="color-overlay">
-        <div class="header" id="arrowUp">
-
         </div>
-    </div>
-    <div class="leerlijn">
-        <div class="leerlijnbuttons">
-            <h1>Leerlijn IPO</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="#fase1">Fase 1
-                            <!--Interprofessioneel<br><strong>kennismaking</strong><br> & Basisvaardigheden--></a>
-                    </li>
-                    <li><a href="#fase2">Fase 2
-                            <!--Interprofessioneel<br> <strong>zorgtaken</strong><br> in simulatiesetting--></a></li>
-                    <li> <a href="#fase3">Fase 3
-                            <!--Interprofessioneel<br> <strong>zorg</strong><br> op de werkvloer--></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="containerfases">
-            <div id="fase1" class="fase">
-                <h3>Interporfessioneel <span>kennismaken</span> & Basisvaardigheden</h3>
-                <p>In fase 1 is het de bedoeling dat de studenten kennismaken met de
-                    eigen maar ook met anderen disciplines binnen de gezondheidszorg. Dit gebeurd aan de hand van lessen
-                    maar ook via projecten.
-                    Daarnaast is het belangrijk dat ze enkele communicatieve
-                    basisvaardigheden aanleren die een goede samenwerking
-                    stimuleren.
-                </p>
-                <br>
-                <h3>Projecten binnen fase 1:</h3>
-                <ul>
-                    <li>WeKONEKT</li>
-                    <li>Jobhopdag</li>
-                    <li>Iedereen voor zorg #Brusselshealthcampus (pilootproject)</li>
-                </ul>
-                <img src="images/zorgtaken.jpg">
-            </div>
-            <div id="fase2" class="fase">
-                <h3>Interporfessioneel <span>zorgtaken</span> in simulatiesetting</h3>
-                <p>In fase 2 gaan studenten zorgtaken op een interprofessionele manier
-                    benaderen en uitwerken, maar in een simulatiesetting. Dit wil
-                    zeggen dat de studenten in meerdere opleidingsbrede projecten met
-                    elkaar moeten samenwerken en casussen interprofessioneel moeten
-                    benaderen.</p>
-                <h3>Projecten binnen fase 2:</h3>
-                <ul>
-                    <li>Discussethical dilemmastoghether (pilootproject)</li>
-                    <li>INS</li>
-                    <li>Project zorgplanning</li>
-                </ul>
-                <img src="images/zorgtaken.jpg">
-            </div>
-            <div id="fase3" class="fase">
-                <h3>interprofessioneel <span>zorg</span> op de werkvloer</h3>
-                <p>In fase 3 moet de student op de werkvloer zelf intensief
-                    interprofessioneel samenwerken. Dit gebeurd aan de hand van
-                    stages en opdrachten die dienen uitgevoerd worden op de
-                    stageplaats zelf.</p>
-                <h3>Projecten binnen fase 3:</h3>
-                <ul>
-                    <li>Integrated care stage</li>
-                </ul>
-                <img src="images/zorgtaken.jpg">
-            </div>
-        </div>
-        <a class="arrowUp" href="#arrowUp"><i class="fas fa-caret-square-up"></i></a>
-    </div>
-
-    <footer>
-        <div class="footer-logo"> <a href="index.html"> <img src="images/logo_small.png"></a></div>
-        <div class="contact">
-            <h3>contact</h3>
-            <p>Lorem ipsum dolor sit.Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit.Lorem ipsum </p>
-            <p>Lorem ipsum dolor sit.Lorem ipsum</p>
-        </div>
-        <div class="footer-socialmedia">
-            <h3>Volg ons</h3>
+        <div class="main-menu-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <!--Einde code: Menu voor desktop versie -->
+
+
+    </div>
+    <!-- Start code: banner -->
+
+    <div class="banner-container">
+
+    </div>
+    <!-- Einde code: banner -->
+
+    <!-- Start code: Leerlijn -->
+
+    <div class="leerlijn-container">
+
+    </div>
+    <!-- Einde code: LeerlijnIPO -->
+
+    <!-- Start code: footer -->
+    <footer>
+        <div class="footer-ipo-logo"> <a href="index.html"><img src="images/ipo-logo.png" alt="logo"></a></div>
+        <div class="footer-contact">
+            <h2>contact</h2>
+            <a href="mailto:Lien.verlaak@ehb.be">
+                <p>Lien.verlaak@ehb.be</p>
+            </a>
+            <a href="https://goo.gl/maps/PRELVCA4hTd1Fcyq9" target="_blank">
+                <p>Zespenningenstraat 70 - 1000 Brussel </p>
+            </a>
+        </div>
+        <div class="footer-icons">
+            <h2>Volg ons</h2>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
         </div>
     </footer>
-    <div class="logo-un">
-        <div><a href="https://www.erasmushogeschool.be/nl" target="_blank"><img src="images/ehb-logo.svg"></a></div>
-        <div><a href="https://www.universitaireassociatiebrussel.org/" target="_blank"><img
-                    src="images/uab_logo-1.png"></a>
-        </div>
-        <div><a href="https://www.vub.be/" target="_blank"><img src="images/vub-logo.svg"></a></div>
+    <div class="icons-university">
+        <div><a href="https://www.erasmushogeschool.be/nl" target="_blank"><img src="images/ehb-logo.svg"
+                    alt="ehb-logo"></a></div>
+        <div><a href="https://www.vub.be/" target="_blank"><img src="images/vub-logo.svg" alt="vub-logo"></a></div>
+        <div><a href="https://www.universitaireassociatiebrussel.org/" target="_blank"><img src="images/uab_logo.png"
+                    alt="uab-logo"></a></div>
     </div>
-</body>
-
-</html>
+    <!-- Einde code: footer -->
 </body>
 
 </html>
