@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/eca43c78f4.js" crossorigin="anonymous"></script>
-    <title>Full Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+
+    <title>Contact | IPO</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="nav">
 
+    <div class="main-menu-container" id="main-menu">
+        <!--Start code: Menu voor mobiele versie -->
         <div class="outer-menu">
             <input class="checkbox-toggle" type="checkbox" />
             <div class="hamburger">
@@ -22,82 +29,99 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="index.html">Wat is IPO?</a></li>
-                            <li><a href="wiezijnwij.html">Wie zijn Wij?</a></li>
+                            <a href="index.html"><img src="images/ipo-logo.png" alt="logo" width="100px"></a>
+                            <li><a href="index.html">Wie zijn Wij?</a></li>
                             <li><a href="leerlijn.html">Leerlijn IPO</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="socialmedia.html">Social Media</a></li>
+                            <br>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+
                         </ul>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo_small.png" alt=""></a>
+        <!--Einde code: Menu voor mobiele versie -->
+        <div class="ipo-logo">
+            <a href="index.html"><img src="images/ipo-logo.png" alt="logo"></a>
         </div>
-        <nav class="nav-desktop">
+
+        <!--Start code: Menu voor desktop versie -->
+        <div class="main-menu-desktop">
             <ul>
-                <li><a href="index.html">Wat is IPO?</a>
-                </li>
-                <li><a href="wiezijnwij.html">Wie zijn Wij?</a></li>
+                <li><a href="index.html">Wie zijn wij?</a></li>
+                <!-- <li><a href="#wie">Wie zijn Wij?</a></li> -->
                 <li><a href="leerlijn.html">Leerlijn IPO</a></li>
                 <li><a href="contact.html"
-                        style="color:#3AAFA9; background-color: #17252A; text-decoration: underline;">Contact</a></li>
-                <li><a href="socialmedia.html">Social Media</a></li>
+                        style="color: #1D1E1B; text-decoration: underline;text-decoration-color: #F05945;">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </div>
-    <div class="color-overlay">
-        <div class="header">
-
         </div>
-    </div>
-    <div class="container-contact">
-        <h1>Contact</h1>
-        <main>
-            <div class="img-contact">
+        <div class="main-menu-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <!--Einde code: Menu voor desktop versie -->
 
-                <img src="images/contact.jpg" alt="contact">
-            </div>
-            <div class="table">
+    </div>
+    <!-- Start code: Contact -->
+    <div class="contact-container">
+        <h1>CONTACTEER <span> ONS</span></h1>
+        <section>
+            <div class="contact-table">
                 <table>
                     <p> Naam:</p>
                     <input type="text" placeholder="Je naam" />
-
                     <p> E-mail: </p>
                     <input type="email" placeholder="Je e-mailadres" />
                     <p>Telefoonnummer: </p>
                     <input type="number" placeholder="telefoonnummer" />
-                    <p>Onderwerp: </p>
-                    <input type="text" placeholder="Onderwerp" name="onderwerp" />
-                    <p>Vragen:</p>
-                    <textarea cols="30" rows="4" placeholder="Vragen"></textarea><br>
+                    <p>Opmerking:</p>
+                    <textarea cols="30" rows="4" placeholder="Opmerking"></textarea><br>
                     <input type="submit" value="Indienen">
                 </table>
             </div>
-        </main>
+            <div class="contact-video">
+                <video autoplay loop>
+                    <source src="videos/fullProject-Video-Contact-Passive.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
     </div>
+    <!-- Einde code: Contact -->
+
+    <!-- Start code: footer -->
     <footer>
-        <div class="footer-logo"> <a href="index.html"> <img src="images/logo_small.png"></a></div>
-        <div class="contact">
-            <h3>contact</h3>
-            <p>Lorem ipsum dolor sit.Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit.Lorem ipsum </p>
-            <p>Lorem ipsum dolor sit.Lorem ipsum</p>
+        <div class="footer-ipo-logo"> <a href="index.html"><img src="images/ipo-logo.png" alt="logo"></a></div>
+        <div class="footer-contact">
+            <h2>contact</h2>
+            <a href="mailto:Lien.verlaak@ehb.be">
+                <p>Lien.verlaak@ehb.be</p>
+            </a>
+            <a href="https://goo.gl/maps/PRELVCA4hTd1Fcyq9" target="_blank">
+                <p>Zespenningenstraat 70 - 1000 Brussel </p>
+            </a>
         </div>
-        <div class="footer-socialmedia">
-            <h3>Volg ons</h3>
+        <div class="footer-icons">
+            <h2>Volg ons</h2>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
         </div>
     </footer>
-    <div class="logo-un">
-        <div><a href="https://www.erasmushogeschool.be/nl" target="_blank"><img src="images/ehb-logo.svg"></a></div>
-        <div><a href="https://www.universitaireassociatiebrussel.org/" target="_blank"><img
-                    src="images/uab_logo-1.png"></a>
-        </div>
-        <div><a href="https://www.vub.be/" target="_blank"><img src="images/vub-logo.svg"></a></div>
+    <div class="icons-university">
+        <div><a href="https://www.erasmushogeschool.be/nl" target="_blank"><img src="images/ehb-logo.svg"
+                    alt="ehb-logo"></a></div>
+        <div><a href="https://www.vub.be/" target="_blank"><img src="images/vub-logo.svg" alt="vub-logo"></a></div>
+        <div><a href="https://www.universitaireassociatiebrussel.org/" target="_blank"><img src="images/uab_logo.png"
+                    alt="uab-logo"></a></div>
     </div>
+    <!-- Einde code: footer -->
 </body>
 
 </html>

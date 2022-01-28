@@ -2,22 +2,20 @@
 //     var scrollAfstand = $(window).scrollTop();
 //     var hoogteBlock1 = $("#home").outerHeight();
 
-//     if (scrollAfstand <= 100) {
+//     if (scrollAfstand >= 300) {
 //         //true
 //         $("#main-menu").addClass("fixedNav");
 //         $("#main-menu").stop();
-//         // $("#main-menu").animate({
-//         //     width: '70%',
-//         //     margin: "auto"
-//         // }, 2000);
+//         $("#main-menu").animate({
+//             width: '80%',
+//         }, 1000);
 
-//     } else if (scrollAfstand >= 500) {
+//     } else {
 //         //false
 //         $("#main-menu").removeClass("fixedNav");
-
 //         $("#main-menu").stop();
-//         // $("#main-menu").animate({
-//         //     width: '100%'
-//         // }, 2000);
+//         $("#main-menu").animate({
+//             width: '100%'
+//         }, 1000);
 //     }
 // });
