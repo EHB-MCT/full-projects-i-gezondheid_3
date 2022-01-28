@@ -19,3 +19,7 @@
 //         }, 1000);
 //     }
 // });
+
+// function changeVideo() {
+//     document.getElementById("example_video_1").src = "videos/fullProject-Video-Contact-Active.mp4/";
+// }
