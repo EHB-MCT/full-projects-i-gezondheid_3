@@ -82,7 +82,7 @@
                     <input type="number" placeholder="telefoonnummer" />
                     <p>Opmerking:</p>
                     <textarea cols="30" rows="4" placeholder="Opmerking"></textarea><br>
-                    <input type="submit" value="Indienen">
+                    <input type="submit" value="Indienen" onclick="myFunction()">
                 </table>
             </div>
             <div class="contact-video">
@@ -122,6 +122,11 @@
                     alt="uab-logo"></a></div>
     </div>
     <!-- Einde code: footer -->
+    <script>
+        function myFunction() {
+            document.getElementById("video").src = "videos/fullProject-Video-Contact-Active.mp4";
+        }
+    </script>
 </body>
 
 </html>
