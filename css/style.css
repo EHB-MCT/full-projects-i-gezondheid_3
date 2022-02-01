@@ -9,6 +9,24 @@
     display: none;
 }
 
+#toTop {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 999;
+}
+
+#toTop div {
+    background-color: red;
+    height: 57px;
+    width: 100px;
+    right: 0;
+    bottom: 0px;
+    position: fixed;
+    border-radius: 120px 0 0 0;
+}
+
 body,
 html {
     height: 100%;
@@ -34,14 +52,14 @@ a:active {
     position: fixed;
     top: 0px;
     right: 90px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .outer-menu .checkbox-toggle {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 10;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -232,6 +250,7 @@ a:active {
     transition: width 0.4s ease;
 }
 
+
 /* Einde code: Menu voor mobiele versie */
 
 
@@ -259,11 +278,25 @@ a:active {
 /* Start code: banner-container */
 
 .banner-container {
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/HEADEROpleidingen.jpg");
     background-size: cover;
-    height: 500px;
+    height: 400px;
     width: 100%;
     border-bottom: 5px solid #F05945;
+    position: relative;
+}
+
+.banner-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    object-position: center;
+    object-fit: cover;
 }
 
 /* Einde code: banner-container */
@@ -282,18 +315,7 @@ a:active {
 }
 
 .wiezijnwij article h1 {
-    font-size: 1.5em;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.wiezijnwij article h2 {
-    color: #F05945;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
 }
 
 .wiezijnwij section {
@@ -318,13 +340,6 @@ a:active {
 
 .watisipo>.waarvoorStaatIpo {
     text-align: center;
-}
-
-.watisipo>.waarvoorStaatIpo>h2 {
-    color: #F05945;
-    font-size: 1.5em;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
 }
 
 .doelstellingen>section {
@@ -377,11 +392,14 @@ a:active {
 }
 
 .line div {
-    color: #F05945;
-    font-size: 1em;
+    color: black;
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 50px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 /**-------------***/
@@ -391,13 +409,11 @@ a:active {
     width: 100%;
     margin: auto;
     text-align: center;
+    border-top: 2px solid #f05945;
 }
 
 .leerlijn-container h1 {
-    font-size: 1.5em;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
+    padding: 75px 0;
 }
 
 .fase-container {
@@ -410,10 +426,11 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    border-top: 1px solid #f05945;
+    border-bottom: 1px solid #f05945;
 }
 
 .fase h2 {
-    font-size: 1em;
     width: 100%;
 }
 
@@ -432,23 +449,8 @@ a:active {
     border: 2px solid #F05945;
 }
 
-.fase2 .fa-chevron-down {
-    position: absolute;
-    bottom: 0px;
-}
-
-.fase i {
-    color: #F05945;
-    font-size: 3em;
-}
 
 /* Einde code: leerlij-container*/
-.contact-container h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: center;
-}
 
 .contact-container>section {
     width: 90%;
@@ -548,8 +550,24 @@ footer h2 {
 
 /* Einde code: Footer-container*/
 
-span {
+h1 span {
     color: #F05945;
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.wiezijnwij article h2 {
+    color: #F05945;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 /*Start code media*/
@@ -558,8 +576,51 @@ span {
 @media (min-width: 750px) {
 
     /*Star code: main menu*/
+
+    .sub>ul {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.719);
+        border: 1px solid #F05945;
+    }
+
+    .sub>ul li {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .sub {
+        background: url("../images/ic_keyboard_arrow_down.png") right no-repeat;
+        padding-right: 20px;
+    }
+
+    .main-menu-desktop .sub:hover>ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        transition: 5s;
+    }
+
+    .main-menu-desktop .sub ul li a {
+        margin: 0;
+        padding: 15px 10px;
+        text-align: left;
+        color: #F05945;
+        font-size: 0.75em;
+
+    }
+
+    .main-menu-desktop .sub ul li a:hover {
+        color: white;
+        background-color: #f05945d5;
+        border-radius: 10px;
+    }
+
     .main-menu-container {
-        z-index: 999;
+        z-index: 888;
         background-color: white;
     }
 
@@ -621,15 +682,14 @@ span {
     }
 
     /*Einde code: main menu*/
-
-    /*Start code: banner*/
-
+    /*start code:banner*/
     .banner-container {
-        background-image: url('../images/banner-1.jpg');
+        background-image: url("../images/HEADEROpleidingen1.jpg");
+        background-position: center;
+        height: 500px;
     }
 
     /*Einde code: banner*/
-
     /*Start code: Home*/
     .home-container {
         width: 100%;
@@ -700,6 +760,7 @@ span {
     /*Einde code: Home*/
 
     /*Start code: Leerlijn-container*/
+
     .fase-container {
         width: 100%;
     }
@@ -712,17 +773,6 @@ span {
         position: relative;
     }
 
-    .fase2 .fa-chevron-down {
-        position: absolute;
-        bottom: 0px;
-    }
-
-    .fase i {
-        position: absolute;
-        color: #F05945;
-        font-size: 3em;
-        right: 80px;
-    }
 
     .fase h2 {
         font-size: 1.5em;

@@ -6,16 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/eca43c78f4.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-
   <title>Homepage | IPO</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
   <div class="main-menu-container" id="main-menu">
     <!--Start code: Menu voor mobiele versie -->
     <div class="outer-menu">
@@ -28,7 +25,10 @@
           <div>
             <ul>
               <a href="index.html"><img src="images/ipo-logo.png" alt="logo" width="100px"></a>
-              <li><a href="index.html">Wie zijn wij?</a></li>
+              <li class="sub"><a href="index.html">IPO?</a>
+
+              </li>
+              <li><a href="opleidingen.html">Opleidingen</a></li>
               <li><a href="leerlijn.html">Leerlijn IPO</a></li>
               <li><a href="contact.html">Contact</a></li>
               <br>
@@ -50,11 +50,16 @@
     <!--Start code: Menu voor desktop versie -->
     <div class="main-menu-desktop">
       <ul>
-        <li><a href="index.html" style="color: #1D1E1B; text-decoration: underline;text-decoration-color: #F05945;">Wie
-            zijn
-            wij?</a>
+        <li class="sub"><a href="index.html"
+            style="color: #1D1E1B; text-decoration: underline;text-decoration-color: #F05945;">
+            IPO</a>
+          <ul>
+            <li><a href="#wiezijnwij">Wie zijn wij?</a></li>
+            <li><a href="#watisipo">waarvoor staat IPO?</a></li>
+            <li><a href="#doelstellingen">Doelstellingen</a></li>
+          </ul>
         </li>
-        <!-- <li><a href="#wie">Wie zijn Wij?</a></li> -->
+        <li><a href="opleidingen.html">Opleidingen</a></li>
         <li><a href="leerlijn.html">Leerlijn IPO</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -71,14 +76,14 @@
   <!-- Start code: banner -->
 
   <div class="banner-container">
-
+    <video controlers autoplay loop src="videos/logo.mp4"></video>
   </div>
   <!-- Einde code: banner -->
 
   <!-- Start code: Home -->
 
   <div class="home-container">
-    <div class="wiezijnwij">
+    <div class="wiezijnwij" id="wiezijnwij">
       <article>
         <h1>wie zijn <span> wij?</span></h1>
         <h2>werkgroep IPO</h2>
@@ -102,9 +107,9 @@
         </video>
       </section>
     </div>
-    <div class="watisipo">
+    <div class="watisipo" id="watisipo">
       <div class="waarvoorStaatIpo">
-        <h2>Waarvoor staat IPO?</h2>
+        <h1>Waarvoor staat <span> IPO?</span></h1>
         <p>Het begrip interprofessioneel verwijst naar de aanwezigheid van meerdere
           professionele groepen (geneeskunde, kinesitherapie, verpleegkunde,
           voedings - en dieetkunde, …) die in interactie samen leren met de bedoeling
@@ -115,10 +120,10 @@
         <div class="line">
           <span></span>
           <div>
-            <h2>Doelstellingen</h2>
+            <h1>Doelstellingen</h1>
           </div><span></span>
         </div>
-        <div class="doelstellingen">
+        <div class="doelstellingen" id="doelstellingen">
           <section>
             <article>
               <img src="images/doel-foto-1.png" alt="">
