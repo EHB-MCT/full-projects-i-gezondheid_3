@@ -276,14 +276,23 @@ a:active {
 /* Einde code: Main-menu-container */
 
 /* Start code: banner-container */
+.banner {
+    width: 100%;
+    border-bottom: 2px solid #F05945;
+    background-color: #F7F3E9;
+}
 
 .banner-container {
-    background-image: url("../images/HEADEROpleidingen.jpg");
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    border-bottom: 5px solid #F05945;
+    height: auto;
+    margin: auto;
+    width: 60%;
     position: relative;
+}
+
+.video-banner {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
 }
 
 .banner-container video {
@@ -292,10 +301,7 @@ a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    min-width: 100%;
-    min-height: 100%;
     z-index: 2;
-    object-position: center;
     object-fit: cover;
 }
 
@@ -314,9 +320,7 @@ a:active {
     padding: 20px 10px;
 }
 
-.wiezijnwij article h1 {
-    margin: 0;
-}
+
 
 .wiezijnwij section {
     display: flex;
@@ -386,7 +390,7 @@ a:active {
 }
 
 .line span {
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: #F05945;
 }
@@ -410,10 +414,6 @@ a:active {
     margin: auto;
     text-align: center;
     border-top: 2px solid #f05945;
-}
-
-.leerlijn-container h1 {
-    padding: 75px 0;
 }
 
 .fase-container {
@@ -451,6 +451,92 @@ a:active {
 
 
 /* Einde code: leerlij-container*/
+/* Start code: opleidingen*/
+.opleidingen-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.vub,
+.ehb {
+    width: 100%;
+    margin: auto;
+}
+
+.vub>section,
+.ehb>section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.opleidingen-box {
+    background-color: #F7F3E9;
+    width: 100%;
+    margin: 50px 0;
+    box-shadow: 10px 10px 30px gray;
+    border-radius: 0 25px;
+}
+
+.opleidingen-box>article {
+    padding: 50px 15px;
+}
+
+.opleidingen-box>article>h3 {
+    margin-top: 0;
+    color: #F05945;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.opleidingen-box>article>a {
+    color: #F05945;
+    text-transform: capitalize;
+    font-size: 1em;
+    background-color: white;
+    padding: 5px 20px;
+    border: 1px solid #F05945;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.opleidingen-box>article>a:hover {
+    background-color: #F05945;
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.banner-opleidingen {
+    background-image: url("../images/HEADEROpleidingen1.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid #f05945;
+}
+
+.opleidingen-img-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.opleidingen-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Einde code: opleidingen*/
+
+/* Start code: Contact-container*/
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .contact-container>section {
     width: 90%;
@@ -487,7 +573,8 @@ textarea {
     color: #f05945;
     border: 2px solid #F05945;
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 ::placeholder {
@@ -500,7 +587,17 @@ textarea {
     width: 100%;
 }
 
-/* Start code: Contact-container*/
+.contact-div {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-div>div {
+    background-color: #F7F3E9;
+}
+
 
 /* Einde code: Contact-container*/
 
@@ -550,7 +647,8 @@ footer h2 {
 
 /* Einde code: Footer-container*/
 
-h1 span {
+h1 span,
+h2 span {
     color: #F05945;
     font-size: 35px;
 }
@@ -561,13 +659,14 @@ h1 {
         sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 100px 0;
 }
 
-.wiezijnwij article h2 {
-    color: #F05945;
+h2 {
+    color: #1D1E1B;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /*Start code media*/
@@ -682,14 +781,7 @@ h1 {
     }
 
     /*Einde code: main menu*/
-    /*start code:banner*/
-    .banner-container {
-        background-image: url("../images/HEADEROpleidingen1.jpg");
-        background-position: center;
-        height: 500px;
-    }
 
-    /*Einde code: banner*/
     /*Start code: Home*/
     .home-container {
         width: 100%;
@@ -704,9 +796,9 @@ h1 {
 
     .wiezijnwij article,
     .wiezijnwij section {
-        width: 45%;
+        width: 48%;
         text-align: left;
-        margin-top: 50px;
+        margin-bottom: 100px;
     }
 
     .watisipo {
@@ -842,6 +934,47 @@ h1 {
         margin: 0;
     }
 
+    /*Start code: Opleidingen*/
+    .opleidingen-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .vub section {
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+
+    .opleidingen-box {
+        width: 30%;
+        border-radius: 0px 25px;
+        box-shadow: none;
+        transition: 1s;
+    }
+
+    .opleidingen-box:hover {
+        box-shadow: 0px 0px 20px 5px gray;
+        transform: rotateY(10deg);
+        transition: 0.5s;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .vub {
+        width: 100%;
+        margin: auto;
+    }
+
+    .opleidingen-box>article {
+        padding: 20px 15px;
+    }
+
+    /*Einde code: Opleidingen*/
+
     /*Start code: Contact-container*/
     .contact-container {
         width: 100%;
@@ -895,7 +1028,7 @@ h1 {
     }
 
     .contact-table>input[type=submit] {
-        margin-bottom: 30PX;
+        margin: 50px 0 100px 0;
         width: 30%;
         border-radius: 10px;
         transition: 1s;
@@ -911,15 +1044,4 @@ h1 {
     /*Einde code: Contact-container*/
 
     /*Einde code: footer*/
-    .fixedNav {
-        border-radius: 0px 0 20px 20px;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.9);
-        border-bottom: 2px solid #F05945;
-        border-left: 2px solid #F05945;
-        border-right: 2px solid #F05945;
-    }
-
 }
