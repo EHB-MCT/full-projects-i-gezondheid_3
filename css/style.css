@@ -18,13 +18,21 @@
 }
 
 #toTop div {
-    background-color: red;
-    height: 57px;
+    background-color: transparent;
+    height: 70px;
     width: 100px;
     right: 0;
     bottom: 0px;
     position: fixed;
-    border-radius: 120px 0 0 0;
+}
+
+#toTop i {
+    color: #f05945;
+    position: fixed;
+    right: 5px;
+    bottom: 0px;
+    font-size: 3em;
+    z-index: 1000;
 }
 
 body,
@@ -214,7 +222,7 @@ a:active {
     display: block;
 }
 
-.outer-menu .menu>div>div>ul>i {
+.outer-menu .menu>div>div>ul>a>i {
     font-size: 30px;
     margin-left: 20px;
     cursor: pointer;
@@ -426,8 +434,11 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    border-top: 1px solid #f05945;
-    border-bottom: 1px solid #f05945;
+}
+
+.fase>article {
+    width: 80%;
+    margin: auto;
 }
 
 .fase h2 {
@@ -447,6 +458,7 @@ a:active {
 .fase img {
     width: 80%;
     border: 2px solid #F05945;
+    margin: 50px 0;
 }
 
 
@@ -487,7 +499,7 @@ a:active {
     margin-top: 0;
     color: #F05945;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 .opleidingen-box>article>a {
@@ -595,9 +607,18 @@ textarea {
 }
 
 .contact-div>div {
+    text-align: center;
     background-color: #F7F3E9;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 0;
+    border: 2px solid #F05945;
 }
 
+.contact-div i {
+    font-size: 2em;
+    color: #F05945;
+}
 
 /* Einde code: Contact-container*/
 
@@ -672,7 +693,8 @@ h2 {
 /*Start code media*/
 
 
-@media (min-width: 750px) {
+
+@media (min-width: 768px) {
 
     /*Star code: main menu*/
 
@@ -863,6 +885,7 @@ h2 {
         text-align: left;
         background-color: #F7F3E9;
         position: relative;
+        padding: 30px 0;
     }
 
 
@@ -902,13 +925,12 @@ h2 {
 
     .fase img {
         transform: rotate(-5deg);
-        margin-bottom: 50px;
     }
 
     .fase2 img {
         transform: rotate(5deg);
-
     }
+
 
     /*Einde code: Leerlijn-container*/
 
@@ -942,8 +964,7 @@ h2 {
 
     .vub section {
         width: 100%;
-        margin: auto;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
@@ -952,11 +973,12 @@ h2 {
         border-radius: 0px 25px;
         box-shadow: none;
         transition: 1s;
+        margin-left: 50px;
     }
 
     .opleidingen-box:hover {
         box-shadow: 0px 0px 20px 5px gray;
-        transform: rotateY(10deg);
+        transform: rotateY(-10deg);
         transition: 0.5s;
     }
 
@@ -993,9 +1015,20 @@ h2 {
     }
 
     .contact-table,
-    .contact-video {
+    .contact-video,
+    .contact-div {
         width: 50%;
         text-align: left;
+    }
+
+    .contact-div {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contact-div>div {
+        width: 45%;
+        padding: 10px 0;
     }
 
     .contact-video>video {
@@ -1043,5 +1076,4 @@ h2 {
 
     /*Einde code: Contact-container*/
 
-    /*Einde code: footer*/
 }
