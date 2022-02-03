@@ -316,6 +316,10 @@ a:active {
 /* Einde code: banner-container */
 
 /* Start code: home-container */
+.home-container h1 {
+    text-align: center;
+}
+
 .wiezijnwij {
     display: flex;
     flex-wrap: wrap;
@@ -672,6 +676,10 @@ h1 span,
 h2 span {
     color: #F05945;
     font-size: 35px;
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -821,6 +829,10 @@ h2 {
         width: 48%;
         text-align: left;
         margin-bottom: 100px;
+    }
+
+    .wiezijnwij>section>video {
+        margin: 0;
     }
 
     .watisipo {
