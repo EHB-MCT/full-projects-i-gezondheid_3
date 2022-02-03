@@ -1179,4 +1179,8 @@ h2 {
         width: 100%;
         margin-bottom: 100px;
     }
+
+    #toTop {
+        display: none;
+    }
 }
