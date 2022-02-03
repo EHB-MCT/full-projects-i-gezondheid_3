@@ -744,9 +744,6 @@ h2 {
 }
 
 /*Start code media*/
-
-
-
 @media (min-width: 768px) {
 
     /*Star code: main menu*/
@@ -1030,10 +1027,6 @@ h2 {
         justify-content: space-between;
     }
 
-    .ehb-section>.opleidingen-box {
-        width: 18%;
-    }
-
     .opleidingen-box {
         width: 18%;
         border-radius: 0px 25px;
@@ -1144,4 +1137,34 @@ h2 {
     /*Einde code: Contact-container*/
 }
 
-@media only screen and (min-width:768px) and (max-width:1200px) {}
+@media only screen and (min-width:768px) and (max-width:1240px) {
+    .outer-menu {
+        display: block;
+    }
+
+    .main-menu-desktop {
+        display: none;
+    }
+
+    .main-menu-icons {
+        display: none;
+    }
+
+    .ipo-logo img {
+        margin-left: 10px;
+    }
+
+    .doelstellingen>section>article {
+        width: 33%;
+    }
+
+    .opleidingen-box {
+        width: 40%;
+    }
+
+    .wiezijnwij article,
+    .wiezijnwij section {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}
