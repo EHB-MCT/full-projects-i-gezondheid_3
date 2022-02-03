@@ -35,6 +35,10 @@
     z-index: 1000;
 }
 
+#toTop i:hover {
+    color: #eb7060;
+}
+
 body,
 html {
     height: 100%;
@@ -524,6 +528,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .opleidingen-box>article {
@@ -698,10 +703,12 @@ footer p:hover {
 .footer-icons i {
     font-size: 1.5em;
     margin-left: 20px;
+    transition: 0.3s;
 }
 
 .footer-icons i:hover {
     color: #F05945;
+    transition: 0.3s;
 }
 
 .icons-university {
@@ -819,11 +826,13 @@ h2 {
         font-weight: bold;
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
+        transition: 0.5;
     }
 
     .main-menu-desktop ul li a:hover {
         color: #1D1E1B;
         text-decoration: underline;
+        transition: 0.5s;
     }
 
 
@@ -836,10 +845,12 @@ h2 {
 
     .main-menu-icons i {
         margin-right: 30px;
+        transition: 0.3s;
     }
 
     .main-menu-icons i:hover {
         color: #1D1E1B;
+        transition: 0.3s;
     }
 
     .ipo-logo img {
@@ -974,8 +985,9 @@ h2 {
     }
 
     .line-fase {
+        margin-bottom: 50px;
         width: 3px;
-        height: 450px;
+        height: 500px;
         background-color: #F05945;
     }
 
