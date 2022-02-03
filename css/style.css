@@ -332,6 +332,26 @@ a:active {
     padding: 20px 10px;
 }
 
+.wiezijnwij article a {
+    font-size: 1em;
+    background-color: white;
+    color: #F05945;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid #f05945;
+    transition: 0.5s;
+}
+
+.wiezijnwij article a:hover {
+    border-radius: 40px;
+    background-color: #f05945;
+    color: white;
+    transition: 0.5s;
+}
+
+.wiezijnwij p {
+    margin-bottom: 50px;
+}
 
 
 .wiezijnwij section {
@@ -342,8 +362,7 @@ a:active {
 
 .wiezijnwij>section>video {
     width: 90%;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 50px 0px 50px 0px;
     border: 2px solid #F05945;
 }
 
@@ -357,6 +376,8 @@ a:active {
 .watisipo>.waarvoorStaatIpo {
     text-align: center;
 }
+
+
 
 .doelstellingen>section {
     display: flex;
@@ -434,6 +455,10 @@ a:active {
     background-color: #F7F3E9;
 }
 
+.fase-container span {
+    color: #f05945;
+}
+
 .fase {
     display: flex;
     flex-wrap: wrap;
@@ -460,6 +485,9 @@ a:active {
 }
 
 .fase img {
+    background-color: #F05945;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px grey;
     width: 80%;
     border: 2px solid #F05945;
     margin: 50px 0;
@@ -576,7 +604,7 @@ input[type=number],
 input[type=email],
 textarea {
     width: 90%;
-    padding: 15px 0;
+    padding: 15px 10px;
     background-color: #ededed;
     border: 1px solid #60aba9;
 }
@@ -639,15 +667,26 @@ footer {
 }
 
 .footer-ipo-logo img {
-    height: 75px;
+    height: 100px;
 }
 
 footer h2 {
+    text-align: center;
     color: #F05945;
     font-size: 1.5em;
     text-transform: uppercase;
 }
 
+footer p {
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+footer p:hover {
+    color: #F05945;
+    transition: 0.3s;
+}
 
 .footer-icons i {
     font-size: 1.5em;
@@ -675,7 +714,6 @@ footer h2 {
 h1 span,
 h2 span {
     color: #F05945;
-    font-size: 35px;
     font-family: 'Josefin Sans',
         sans-serif;
     font-weight: bold;
@@ -841,8 +879,9 @@ h2 {
         padding: 20px 0;
     }
 
+
     .waarvoorStaatIpo {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
 
@@ -891,13 +930,14 @@ h2 {
         width: 100%;
     }
 
+
     .fase {
         width: 100%;
         margin: auto;
         text-align: left;
         background-color: #F7F3E9;
         position: relative;
-        padding: 30px 0;
+        padding: 30px 0 50px 0;
     }
 
 
@@ -944,13 +984,14 @@ h2 {
     }
 
 
+
     /*Einde code: Leerlijn-container*/
 
     footer {
         flex-direction: row;
         justify-content: space-around;
         text-align: left;
-        padding: 0;
+        padding: 50px 0 0 0;
     }
 
     footer div {
@@ -966,6 +1007,7 @@ h2 {
         flex-direction: row;
         justify-content: space-around;
         margin: 0;
+        padding: 0px 450px;
     }
 
     /*Start code: Opleidingen*/
@@ -978,7 +1020,7 @@ h2 {
     .ehb section {
         width: 80%;
         margin: auto;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
@@ -987,7 +1029,7 @@ h2 {
         border-radius: 0px 25px;
         box-shadow: none;
         transition: 1s;
-        margin-left: 50px;
+
     }
 
     .opleidingen-box:hover {
@@ -1058,9 +1100,10 @@ h2 {
     input[type=number],
     input[type=email],
     textarea {
+        font-size: 18px;
         width: 70%;
         margin: 0;
-        padding: 8px 0;
+        padding: 8px 10px;
         transition: 1s;
     }
 
