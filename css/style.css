@@ -970,13 +970,15 @@ h2 {
 
     /*Start code: Opleidingen*/
     .opleidingen-container {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 
-    .vub section {
-        width: 100%;
-        justify-content: space-around;
+    .vub section,
+    .ehb section {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
     }
 
 
@@ -995,7 +997,7 @@ h2 {
     }
 
     .line {
-        width: 100%;
+        width: 80%;
     }
 
     .vub {
